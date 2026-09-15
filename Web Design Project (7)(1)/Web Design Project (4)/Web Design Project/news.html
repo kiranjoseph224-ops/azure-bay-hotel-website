@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azure Bay Hotel – News & Offers</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts: Inter + Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Azure Bay Hotel</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <nav class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rooms.html">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Sign up</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="blog-page">
+        <!-- Hero / intro -->
+        <section class="blog-hero">
+            <div class="container">
+                <h1 class="mb-3">News & Offers</h1>
+                <p class="lead mb-2">
+                    Stay up to date with the latest news, seasonal offers, and events at Azure Bay Hotel.
+                </p>
+                <p class="mb-0">
+                    Browse recent posts or filter by category to find what interests you.
+                </p>
+            </div>
+        </section>
+
+        <!-- Controls -->
+        <section class="blog-controls">
+            <div class="container">
+                <div class="row g-3 align-items-center">
+                    <div class="col-md-4">
+                        <label for="blogCategory" class="form-label small mb-1">Category</label>
+                        <select id="blogCategory" class="form-select form-select-sm">
+                            <option value="all">All categories</option>
+                            <option value="offers">Special offers</option>
+                            <option value="events">Events</option>
+                            <option value="news">Hotel news</option>
+                        </select>
+                    </div>
+                    <div class="col-md-5">
+                        <label for="blogSearch" class="form-label small mb-1">Search posts</label>
+                        <input type="text" id="blogSearch" class="form-control form-control-sm"
+                            placeholder="Type a keyword (e.g. spa, music, summer)..." />
+                    </div>
+                    <div class="col-md-3 text-md-end">
+                        <p id="blogCount" class="small mb-0 text-muted">
+                            Showing all posts
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Posts list -->
+        <section class="blog-section">
+            <div class="container">
+                <div class="row g-4" id="blogList">
+                    <!-- Post 1 -->
+                    <div class="col-md-6 blog-item" data-category="offers" data-title="Summer spa packages">
+                        <article class="card blog-card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-2 small text-muted">
+                                    <span>Special offers</span>
+                                    <time datetime="2025-07-05">5 July 2025</time>
+                                </div>
+                                <h2 class="h5 card-title">Summer Spa Packages</h2>
+                                <p class="card-text flex-grow-1">
+                                    Treat yourself to ocean-inspired spa treatments and unwind with our limited-time
+                                    summer spa packages for hotel guests.
+                                </p>
+                                <a href="#" class="stretched-link text-decoration-none small" data-bs-toggle="modal"
+                                    data-bs-target="#post1Modal">
+                                    Read more
+                                </a>
+
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Post 2 -->
+                    <div class="col-md-6 blog-item" data-category="events" data-title="Live music every Friday">
+                        <article class="card blog-card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-2 small text-muted">
+                                    <span>Events</span>
+                                    <time datetime="2025-06-20">20 June 2025</time>
+                                </div>
+                                <h2 class="h5 card-title">Live Music Every Friday</h2>
+                                <p class="card-text flex-grow-1">
+                                    Join us in the lounge each Friday for live music, cocktails, and sunsets over Azure
+                                    Bay.
+                                </p>
+                                <a href="#" class="stretched-link text-decoration-none small" data-bs-toggle="modal"
+                                    data-bs-target="#post2Modal">
+                                    Read more
+                                </a>
+
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Post 3 -->
+                    <div class="col-md-6 blog-item" data-category="news" data-title="New rooftop pool opening">
+                        <article class="card blog-card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-2 small text-muted">
+                                    <span>Hotel news</span>
+                                    <time datetime="2025-05-15">15 May 2025</time>
+                                </div>
+                                <h2 class="h5 card-title">New Rooftop Pool</h2>
+                                <p class="card-text flex-grow-1">
+                                    We’re excited to unveil our newly renovated rooftop pool, now open to all guests
+                                    staying at Azure Bay Hotel.
+                                </p>
+                                <a href="#" class="stretched-link text-decoration-none small" data-bs-toggle="modal"
+                                    data-bs-target="#post3Modal">
+                                    Read more
+                                </a>
+
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Post 4 -->
+                    <div class="col-md-6 blog-item" data-category="offers" data-title="Midweek stay discounts">
+                        <article class="card blog-card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-2 small text-muted">
+                                    <span>Special offers</span>
+                                    <time datetime="2025-04-10">10 April 2025</time>
+                                </div>
+                                <h2 class="h5 card-title">Midweek Stay Discounts</h2>
+                                <p class="card-text flex-grow-1">
+                                    Enjoy quieter stays and lower rates with our midweek offers on selected room types,
+                                    Sunday to Thursday.
+                                </p>
+                                <a href="#" class="stretched-link text-decoration-none small" data-bs-toggle="modal"
+                                    data-bs-target="#post4Modal">
+                                    Read more
+                                </a>
+
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Post 5 -->
+                    <div class="col-md-6 blog-item" data-category="news" data-title="Sustainability initiatives">
+                        <article class="card blog-card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-2 small text-muted">
+                                    <span>Hotel news</span>
+                                    <time datetime="2025-03-01">1 March 2025</time>
+                                </div>
+                                <h2 class="h5 card-title">Sustainability at Azure Bay</h2>
+                                <p class="card-text flex-grow-1">
+                                    Learn more about how we’re reducing waste, supporting local suppliers, and caring
+                                    for our coastline.
+                                </p>
+                                <a href="#" class="stretched-link text-decoration-none small" data-bs-toggle="modal"
+                                    data-bs-target="#post5Modal">
+                                    Read more
+                                </a>
+
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Post 6 -->
+                    <div class="col-md-6 blog-item" data-category="events" data-title="Holiday season events">
+                        <article class="card blog-card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-2 small text-muted">
+                                    <span>Events</span>
+                                    <time datetime="2024-12-01">1 December 2024</time>
+                                </div>
+                                <h2 class="h5 card-title">Holiday Season at Azure Bay</h2>
+                                <p class="card-text flex-grow-1">
+                                    From festive dinners to New Year’s celebrations, discover our programme of seasonal
+                                    events.
+                                </p>
+                                <a href="#" class="stretched-link text-decoration-none small" data-bs-toggle="modal"
+                                    data-bs-target="#post6Modal">
+                                    Read more
+                                </a>
+
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; 2025 Azure Bay Hotel. All rights reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <!-- Blog Post Modals -->
+
+    <div class="modal fade" id="post1Modal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Summer Spa Packages</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- Hero image -->
+                    <img src="images/spa-hero.jpg" alt="Ocean-inspired spa treatment" class="img-fluid rounded mb-4">
+
+                    <article class="blog-article">
+
+                        <h2 class="mb-3">Summer Spa Packages at Azure Bay</h2>
+
+                        <p class="lead">
+                            This summer, escape the heat and slow everything down with our
+                            ocean-inspired spa experiences, created exclusively for guests of
+                            Azure Bay Hotel.
+                        </p>
+
+                        <p>
+                            Designed to reflect the calm and rhythm of the coastline, our summer
+                            spa packages combine restorative treatments, natural marine elements,
+                            and private wellness facilities for a truly immersive retreat.
+                        </p>
+
+                        <hr class="my-4">
+
+                        <h3 class="h5 mb-3">Signature Summer Treatments</h3>
+
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <img src="images/massage.jpg" alt="Relaxing massage therapy"
+                                    class="img-fluid rounded mb-2">
+                                <h4 class="h6">Full-Body Massage Therapy</h4>
+                                <p>
+                                    Ease tension and restore balance with tailored massage treatments
+                                    using aromatic oils inspired by the sea.
+                                </p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <img src="images/sea-salt-scrub.jpg" alt="Sea salt body scrub"
+                                    class="img-fluid rounded mb-2">
+                                <h4 class="h6">Sea-Salt Body Scrubs</h4>
+                                <p>
+                                    Naturally exfoliating scrubs made with mineral-rich sea salts to
+                                    refresh the skin and stimulate circulation.
+                                </p>
+                            </div>
+                        </div>
+
+                        <h3 class="h5 mb-3">Private Wellness Access</h3>
+
+                        <p>
+                            All summer spa packages include access to our private wellness facilities,
+                            offering guests a quiet space to unwind before or after treatments.
+                        </p>
+
+                        <ul>
+                            <li>Thermal relaxation rooms</li>
+                            <li>Sauna and steam facilities</li>
+                            <li>Ocean-view relaxation areas</li>
+                        </ul>
+
+                        <img src="images/wellness-area.jpg" alt="Private wellness facilities"
+                            class="img-fluid rounded my-4">
+
+                        <h3 class="h5 mb-3">Seasonal Offers</h3>
+
+                        <p>
+                            Our summer spa packages are available at special seasonal rates and can
+                            be added to any stay. Whether you’re visiting for a weekend or an extended
+                            escape, these treatments are designed to complement your time at Azure Bay.
+                        </p>
+
+                        <p>
+                            Availability is limited during peak periods. We recommend booking spa
+                            treatments in advance to secure your preferred time.
+                        </p>
+
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="post2Modal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Live Music Every Friday</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- Hero image -->
+                    <img src="images/live-music-hero.jpg" alt="Live music in the hotel lounge"
+                        class="img-fluid rounded mb-4">
+
+                    <article class="blog-article">
+
+                        <h2 class="mb-3">Live Music Every Friday at Azure Bay</h2>
+
+                        <p class="lead">
+                            As the sun sets over the bay, Azure Bay Hotel comes alive with live music,
+                            handcrafted cocktails, and a relaxed coastal atmosphere every Friday evening.
+                        </p>
+
+                        <p>
+                            Our weekly live music sessions are designed for guests who want to unwind,
+                            socialise, and enjoy quality performances without leaving the comfort of
+                            the hotel.
+                        </p>
+
+                        <hr class="my-4">
+
+                        <h3 class="h5 mb-3">An Evening by the Bay</h3>
+
+                        <p>
+                            Performances take place in our lounge area, offering panoramic views of
+                            Azure Bay and comfortable seating throughout the space. Music styles vary
+                            from acoustic sets and jazz-inspired sessions to relaxed contemporary covers.
+                        </p>
+
+                        <img src="images/lounge-evening.jpg" alt="Evening lounge atmosphere"
+                            class="img-fluid rounded my-4">
+
+                        <h3 class="h5 mb-3">Local Artists & Signature Cocktails</h3>
+
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <img src="images/local-musician.jpg" alt="Local musician performing live"
+                                    class="img-fluid rounded mb-2">
+                                <h4 class="h6">Live Performances</h4>
+                                <p>
+                                    We collaborate with talented local musicians to bring a fresh and
+                                    authentic sound to each Friday night.
+                                </p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <img src="images/cocktails.jpg" alt="Cocktails at the hotel bar"
+                                    class="img-fluid rounded mb-2">
+                                <h4 class="h6">Cocktails & Refreshments</h4>
+                                <p>
+                                    Enjoy a curated cocktail menu, premium wines, and light bites available
+                                    throughout the evening.
+                                </p>
+                            </div>
+                        </div>
+
+                        <h3 class="h5 mb-3">Event Details</h3>
+
+                        <ul>
+                            <li>Every Friday evening</li>
+                            <li>Live performances from early evening</li>
+                            <li>Open to hotel guests</li>
+                            <li>No reservation required</li>
+                        </ul>
+
+                        <p>
+                            Seating is available on a first-come basis. Guests are encouraged to arrive
+                            early to secure their preferred spot and enjoy the full experience.
+                        </p>
+
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="post3Modal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">New Rooftop Pool</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- Hero image -->
+                    <img src="images/rooftop-pool-hero.jpg" alt="Rooftop pool with ocean views"
+                        class="img-fluid rounded mb-4">
+
+                    <article class="blog-article">
+
+                        <h2 class="mb-3">The New Rooftop Pool at Azure Bay</h2>
+
+                        <p class="lead">
+                            We are delighted to welcome guests to our newly renovated rooftop pool,
+                            offering uninterrupted views across Azure Bay and a refined space designed
+                            for relaxation.
+                        </p>
+
+                        <p>
+                            Positioned above the coastline, the rooftop pool combines modern design,
+                            comfortable lounging areas, and attentive service, creating an elevated
+                            experience for guests staying at Azure Bay Hotel.
+                        </p>
+
+                        <hr class="my-4">
+
+                        <h3 class="h5 mb-3">A Space Designed to Unwind</h3>
+
+                        <p>
+                            The redesigned rooftop area has been thoughtfully created to balance style
+                            and comfort. Guests can enjoy spacious seating, shaded areas, and a calm
+                            atmosphere throughout the day.
+                        </p>
+
+                        <img src="images/rooftop-loungers.jpg" alt="Sun loungers by the rooftop pool"
+                            class="img-fluid rounded my-4">
+
+                        <h3 class="h5 mb-3">Panoramic Views & Poolside Service</h3>
+
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <img src="images/panoramic-view.jpg" alt="Panoramic ocean view from rooftop"
+                                    class="img-fluid rounded mb-2">
+                                <h4 class="h6">Uninterrupted Coastal Views</h4>
+                                <p>
+                                    Take in sweeping views of the bay while enjoying the serenity of the
+                                    rooftop setting, from early morning through sunset.
+                                </p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <img src="images/poolside-service.jpg" alt="Poolside drinks service"
+                                    class="img-fluid rounded mb-2">
+                                <h4 class="h6">Dedicated Poolside Service</h4>
+                                <p>
+                                    Guests can order refreshments and light bites directly to their loungers,
+                                    allowing for a seamless and relaxed experience.
+                                </p>
+                            </div>
+                        </div>
+
+                        <h3 class="h5 mb-3">Guest Access & Information</h3>
+
+                        <ul>
+                            <li>Exclusively available to hotel guests</li>
+                            <li>Open daily during the summer season</li>
+                            <li>Loungers available on a first-come basis</li>
+                            <li>Relaxed, adults-friendly atmosphere</li>
+                        </ul>
+
+                        <p>
+                            We recommend visiting during quieter morning hours or early evening for the
+                            most relaxed experience. Pool access is included with your stay at Azure Bay.
+                        </p>
+
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="post4Modal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Midweek Stay Discounts</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- Hero image -->
+                    <img src="images/midweek-hero.jpg" alt="Quiet midweek hotel stay" class="img-fluid rounded mb-4">
+
+                    <article class="blog-article">
+
+                        <h2 class="mb-3">Midweek Stay Discounts at Azure Bay</h2>
+
+                        <p class="lead">
+                            Enjoy the calm side of Azure Bay with our exclusive midweek stay discounts,
+                            available from Sunday through Thursday.
+                        </p>
+
+                        <p>
+                            Designed for guests who prefer quieter surroundings and better value,
+                            our midweek rates offer the same premium experience at a reduced seasonal
+                            price.
+                        </p>
+
+                        <hr class="my-4">
+
+                        <h3 class="h5 mb-3">Why Choose a Midweek Stay?</h3>
+
+                        <p>
+                            Midweek stays provide a more relaxed atmosphere throughout the hotel,
+                            from dining areas to wellness facilities. It’s the perfect option for
+                            remote workers, couples, or anyone seeking a peaceful escape.
+                        </p>
+
+                        <img src="images/quiet-lounge.jpg" alt="Peaceful hotel lounge" class="img-fluid rounded my-4">
+
+                        <h3 class="h5 mb-3">Flexible Comfort & Added Value</h3>
+
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <img src="images/comfortable-room.jpg" alt="Comfortable hotel room"
+                                    class="img-fluid rounded mb-2">
+                                <h4 class="h6">Comfortable Rooms</h4>
+                                <p>
+                                    Choose from a selection of room types, all offering the same amenities
+                                    and service standards as weekend stays.
+                                </p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <img src="images/late-checkout.jpg" alt="Relaxed morning hotel stay"
+                                    class="img-fluid rounded mb-2">
+                                <h4 class="h6">Flexible Check-In & Check-Out</h4>
+                                <p>
+                                    Subject to availability, midweek guests may enjoy added flexibility
+                                    with check-in and check-out times.
+                                </p>
+                            </div>
+                        </div>
+
+                        <h3 class="h5 mb-3">Offer Details</h3>
+
+                        <ul>
+                            <li>Available Sunday to Thursday</li>
+                            <li>Discounted midweek room rates</li>
+                            <li>Subject to availability</li>
+                            <li>Ideal for extended or quieter stays</li>
+                        </ul>
+
+                        <p>
+                            Midweek stay discounts can be booked directly through our website or by
+                            contacting the hotel. Availability may vary during peak travel periods.
+                        </p>
+
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="post5Modal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sustainability at Azure Bay</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- Hero image -->
+                    <img src="images/sustainability-hero.jpg" alt="Sustainable hotel practices"
+                        class="img-fluid rounded mb-4">
+
+                    <article class="blog-article">
+
+                        <h2 class="mb-3">Sustainability at Azure Bay</h2>
+
+                        <p class="lead">
+                            At Azure Bay Hotel, we are dedicated to responsible hospitality that
+                            protects our beautiful coastline and supports the local community.
+                        </p>
+
+                        <p>
+                            Our sustainability initiatives focus on reducing environmental impact,
+                            supporting regional suppliers, and creating a greener, cleaner experience
+                            for our guests.
+                        </p>
+
+                        <hr class="my-4">
+
+                        <h3 class="h5 mb-3">Eco-Friendly Practices</h3>
+
+                        <p>
+                            We implement energy-efficient lighting, water-saving technologies, and
+                            waste reduction programs throughout the hotel. From housekeeping to
+                            kitchen operations, sustainability is embedded in our daily routine.
+                        </p>
+
+                        <img src="images/eco-practices.jpg" alt="Eco-friendly hotel operations"
+                            class="img-fluid rounded my-4">
+
+                        <h3 class="h5 mb-3">Supporting Local Suppliers</h3>
+
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <img src="images/local-produce.jpg" alt="Locally sourced produce"
+                                    class="img-fluid rounded mb-2">
+                                <h4 class="h6">Farm-to-Table Dining</h4>
+                                <p>
+                                    Our kitchens source fresh ingredients from local farms and suppliers,
+                                    reducing carbon footprint and supporting regional businesses.
+                                </p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <img src="images/local-crafts.jpg" alt="Local artisan crafts"
+                                    class="img-fluid rounded mb-2">
+                                <h4 class="h6">Community Engagement</h4>
+                                <p>
+                                    We partner with local artisans, craftspeople, and service providers to
+                                    enhance guest experiences while fostering sustainable local economies.
+                                </p>
+                            </div>
+                        </div>
+
+                        <h3 class="h5 mb-3">Protecting Our Coastline</h3>
+
+                        <p>
+                            Azure Bay Hotel actively participates in beach cleanups, marine conservation
+                            initiatives, and educational programs to protect the natural environment
+                            that surrounds us.
+                        </p>
+
+                        <img src="images/coastline-cleanup.jpg" alt="Coastline cleanup initiative"
+                            class="img-fluid rounded my-4">
+
+                        <h3 class="h5 mb-3">Guest Involvement</h3>
+
+                        <ul>
+                            <li>Informational guides about sustainability efforts</li>
+                            <li>Optional participation in eco-activities</li>
+                            <li>Recycling and energy-saving amenities in rooms</li>
+                        </ul>
+
+                        <p>
+                            Guests staying at Azure Bay are encouraged to support our sustainable
+                            initiatives, helping to create a positive impact on the local environment
+                            while enjoying their stay.
+                        </p>
+
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="post6Modal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Holiday Season at Azure Bay</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- Hero image -->
+                    <img src="images/holiday-hero.jpg" alt="Festive holiday season at Azure Bay"
+                        class="img-fluid rounded mb-4">
+
+                    <article class="blog-article">
+
+                        <h2 class="mb-3">Holiday Season at Azure Bay</h2>
+
+                        <p class="lead">
+                            Experience the magic of the festive season at Azure Bay Hotel, with
+                            curated events, themed dining, and celebrations designed to create
+                            unforgettable memories.
+                        </p>
+
+                        <p>
+                            From cozy winter evenings to vibrant New Year festivities, our hotel
+                            offers a blend of luxury, comfort, and holiday cheer for all guests.
+                        </p>
+
+                        <hr class="my-4">
+
+                        <h3 class="h5 mb-3">Festive Dining Experiences</h3>
+
+                        <p>
+                            Enjoy special seasonal menus crafted by our chefs, featuring locally
+                            sourced ingredients and traditional holiday favorites with a modern twist.
+                        </p>
+
+                        <img src="images/holiday-dining.jpg" alt="Festive dining at Azure Bay"
+                            class="img-fluid rounded my-4">
+
+                        <h3 class="h5 mb-3">Themed Events & Entertainment</h3>
+
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <img src="images/christmas-lounge.jpg" alt="Christmas-themed lounge"
+                                    class="img-fluid rounded mb-2">
+                                <h4 class="h6">Christmas Events</h4>
+                                <p>
+                                    From festive decorations to live music and holiday workshops, immerse
+                                    yourself in seasonal cheer with friends and family.
+                                </p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <img src="images/newyear-celebration.jpg" alt="New Year's celebration at the hotel"
+                                    class="img-fluid rounded mb-2">
+                                <h4 class="h6">New Year’s Celebrations</h4>
+                                <p>
+                                    Ring in the new year with an elegant evening of entertainment, champagne
+                                    toasts, and spectacular views of Azure Bay.
+                                </p>
+                            </div>
+                        </div>
+
+                        <h3 class="h5 mb-3">Guest Participation & Experience</h3>
+
+                        <ul>
+                            <li>Festive activities for all ages</li>
+                            <li>Holiday-themed cocktails and menus</li>
+                            <li>Exclusive packages for multi-night stays</li>
+                        </ul>
+
+                        <p>
+                            Whether visiting for a single night or an extended holiday, Azure Bay Hotel
+                            ensures that every guest enjoys the season in style, comfort, and festive
+                            ambiance.
+                        </p>
+
+                    </article>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

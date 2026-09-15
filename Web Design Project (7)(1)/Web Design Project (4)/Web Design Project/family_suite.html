@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azure Bay Hotel – Deluxe Sea View Room</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts: Inter + Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Azure Bay Hotel</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <nav class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rooms.html">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Sign up</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="py-5 room-detail-page">
+        <div class="row align-items-center g-4 justify-content-center text-center">
+            <div class="col-lg-7">
+                <h1 class="mb-2">Family Suite</h1>
+                <p class="lead mb-1">Two Bedrooms • Lounge • Kitchenette • Ideal for families </p>
+                <p class="h5 text-primary mb-0">From €230 / night</p>
+            </div>
+            <div class="col-lg-5 text-lg-end text-center">
+                <p class="mb-2 small text-muted">Perfect for travelling as a family or group</p>
+                <button class="btn btn-primary me-2 mb-2"
+                    onclick="alert('Online booking for Deluxe Sea View Room is coming soon. Please call us at +353 085 613 4892 or email bookings@azurebayhotel.com to reserve your room. Thank you!')">
+                    Book this Room
+                </button>
+                <a href="rooms.html" class="btn btn-outline-secondary mb-2">
+                    View Other Rooms
+                </a>
+            </div>
+        </div>
+        </div>
+        </section>
+
+        <!-- Main content: gallery + details + mini booking -->
+        <section class="pb-5">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Gallery + description -->
+                    <div class="col-lg-8">
+                        <!-- Image gallery -->
+                        <div class="room-gallery mb-4">
+                            <img src="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                class="img-fluid rounded mb-3 room-main-img" id="roomMainImg"
+                                alt="Deluxe sea view room main image" />
+
+                            <div class="d-flex gap-2 flex-wrap">
+                                <img src="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                    class="img-thumbnail room-thumb" alt="Family Suite" />
+                                <img src="https://images.pexels.com/photos/7546564/pexels-photo-7546564.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                    class="img-thumbnail room-thumb" alt="Kid bedroom" />
+                                <img src="https://images.pexels.com/photos/6508341/pexels-photo-6508341.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                    class="img-thumbnail room-thumb" alt="Kitchenette" />
+                            </div>
+                        </div>
+
+                        <h2 class="h4 mb-3">Room Overview</h2>
+                        <p>
+                            The Family Suite provides a spacious and comfortable accommodation for families or groups.
+                            With two separate bedrooms, a cozy lounge area and a fully equipped kitchenette, this suite
+                            offers the perfect blend of privacy and togetherness.
+                        </p>
+
+                        <div class="row g-3 mt-3">
+                            <div class="col-md-6">
+                                <h3 class="h5">Key Features</h3>
+                                <ul class="mb-0">
+                                    <li>Two Seperate Bedrooms</li>
+                                    <li>Kitchenette</li>
+                                    <li>Dining Area</li>
+                                    <li>Two Private Bathrooms</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="h5">In Room Amenities</h3>
+                                <ul class="mb-0">
+                                    <li>Welcome Snacks on Arrival</li>
+                                    <li>Appliances and Kitchenware</li>
+                                    <li>High-Speed Wi-Fi</li>
+                                    <li>A/C and blackout curtains</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <aside class="card room-side-card">
+                            <div class="card-body">
+                                <h2 class="h5 mb-3">Check Availability</h2>
+                                <form id="roomDetailBooking" class="room-detail-form" data-room-price="180"
+                                    data-room-name="Deluxe Sea View Room">
+                                    <div class="mb-3">
+                                        <label for="rdCheckIn" class="form-label">Check-in</label>
+                                        <input type="date" id="rdCheckIn" class="form-control" required />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="rdCheckOut" class="form-label">Check-out</label>
+                                        <input type="date" id="rdCheckOut" class="form-control" required />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="rdGuests" class="form-label">Guests</label>
+                                        <input type="number" id="rdGuests" class="form-control" min="1" max="3"
+                                            value=" " required />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Add-ons</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="20"
+                                                id="addonBreakfast" />
+                                            <label class="form-check-label" for="addonBreakfast">
+                                                Breakfast included (+€20 / stay)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="35" id="addonSpa" />
+                                            <label class="form-check-label" for="addonSpa">
+                                                Spa access (+€35 / stay)
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100 mb-2">
+                                        Calculate Price
+                                    </button>
+                                    <p id="rdResult" class="small mb-0"></p>
+                                </form>
+                            </div>x
+                        </aside>
+
+                        <div class="card mt-4">
+                            <div class="card-body small">
+                                <h3 class="h6">Extra Information</h3>
+                                <ul class="mb-0">
+                                    <li>Check-in from 15:00. Check-out by 11:00</li>
+                                    <li>No Smoking in Rooms</li>
+                                    <li>Free Cancellation up to 48 Hours Before Arrival</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; 2025 Azure Bay Hotel. All rights reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

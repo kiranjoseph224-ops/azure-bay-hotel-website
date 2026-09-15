@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Azure Bay Hotel – Gallery</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts: Inter + Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Azure Bay Hotel</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <nav class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rooms.html">Rooms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reviews.html">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.html">Sign up</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="gallery-page">
+    <!-- Intro / hero -->
+    <section class="gallery-hero">
+      <div class="container">
+        <h1 class="mb-3">Gallery</h1>
+        <p class="lead mb-2">
+          Take a look around Azure Bay Hotel – from sea view rooms to the rooftop pool.
+        </p>
+      </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="gallery-section">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-3">
+          <div class="btn-group gallery-filters" role="group" aria-label="Filter photos">
+            <button type="button" class="btn btn-outline-secondary active" data-filter="all">
+              All
+            </button>
+            <button type="button" class="btn btn-outline-secondary" data-filter="rooms">
+              Rooms
+            </button>
+            <button type="button" class="btn btn-outline-secondary" data-filter="dining">
+              Dining & bar
+            </button>
+            <button type="button" class="btn btn-outline-secondary" data-filter="spa">
+              Spa & Pool
+            </button>
+            <button type="button" class="btn btn-outline-secondary" data-filter="views">
+              Views
+            </button>
+          </div>
+          <p id="galleryInfo" class="small text-muted mb-0">
+            Showing all photos
+          </p>
+        </div>
+
+        <!-- Grid -->
+        <div class="row g-3" id="galleryGrid">
+          <!-- Rooms -->
+          <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="rooms">
+            <figure class="gallery-card">
+              <img
+                src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Deluxe sea view room" class="img-fluid gallery-img"
+                data-caption="Our deluxe sea view room with a balcony." />
+              <figcaption class="gallery-caption small">Deluxe Room</figcaption>
+            </figure>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="rooms">
+            <figure class="gallery-card">
+              <img
+                src="https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Standard double room" class="img-fluid gallery-img"
+                data-caption="Standard double room which provides a city view." />
+              <figcaption class="gallery-caption small">Standard Room</figcaption>
+            </figure>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="rooms">
+            <figure class="gallery-card">
+              <img
+                src="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Family suite" class="img-fluid gallery-img"
+                data-caption="Family suite that includes a separate lounge." />
+              <figcaption class="gallery-caption small">Family Suite</figcaption>
+            </figure>
+          </div>
+
+          <!-- Dining -->
+          <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="dining">
+            <figure class="gallery-card">
+              <img
+                src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Restaurant interior" class="img-fluid gallery-img"
+                data-caption="Our very own restaurant with local seasonal dishes." />
+              <figcaption class="gallery-caption small">Restaurant</figcaption>
+            </figure>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="dining">
+            <figure class="gallery-card">
+              <img
+                src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Cocktail bar" class="img-fluid gallery-img"
+                data-caption="Enjoy your cocktails at our bar and lounge." />
+              <figcaption class="gallery-caption small">Bar & Lounge</figcaption>
+            </figure>
+          </div>
+
+          <!-- Spa & pool -->
+          <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="spa">
+            <figure class="gallery-card">
+              <img
+                src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Rooftop pool at sunset" class="img-fluid gallery-img"
+                data-caption="The rooftop pool overlooking the Azure Bay." />
+              <figcaption class="gallery-caption small">Rooftop Pool</figcaption>
+            </figure>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="spa">
+            <figure class="gallery-card">
+              <img
+                src="https://images.pexels.com/photos/7222170/pexels-photo-7222170.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Spa treatment room" class="img-fluid gallery-img"
+                data-caption="Our Spa treatment room for massages and facials." />
+              <figcaption class="gallery-caption small">Spa</figcaption>
+            </figure>
+          </div>
+
+          <!-- Views -->
+          <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="views">
+            <figure class="gallery-card">
+              <img
+                src="https://images.pexels.com/photos/2581540/pexels-photo-2581540.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Beach sunrise" class="img-fluid gallery-img"
+                data-caption="Sunrise at the beach minutes from our hotel." />
+              <figcaption class="gallery-caption small">Beach Sunrise</figcaption>
+            </figure>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 gallery-item" data-category="views">
+            <figure class="gallery-card">
+              <img
+                src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Coastal view" class="img-fluid gallery-img"
+                data-caption="Coastal views from nearby walking trails outside the hotel." />
+              <figcaption class="gallery-caption small">Coastal Views</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Image modal (lightbox) -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <button type="button" class="btn-close ms-auto m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+          <img id="modalImage" src="" alt="" class="img-fluid rounded mb-2" />
+          <p id="modalCaption" class="small mb-0 text-muted"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          &copy; 2025 Azure Bay Hotel. All rights reserved.
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <div>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
